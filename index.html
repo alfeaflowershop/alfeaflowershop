@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Alfea Flower Shop</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #fff5f8;
+    text-align: center;
+    padding: 20px;
+}
+h1 {
+    color: #c2185b;
+}
+button {
+    background: #e91e63;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+</style>
+</head>
+<body>
+
+<h1>🌸 Alfea Flower Shop</h1>
+
+<button onclick="openSite()">Перейти на сайт</button>
+<button onclick="contact()">Связаться</button>
+
+<script>
+function openSite() {
+    window.open("https://alfeaflower.shop", "_blank");
+}
+
+function contact() {
+    Telegram.WebApp.showAlert("Свяжитесь с нами через Telegram или WhatsApp 🌷");
+}
+
+Telegram.WebApp.expand();
+</script>
+
+</body>
+</html>
